@@ -1,0 +1,110 @@
+.header {
+    display: flex;
+    min-width: 300px;
+    height: 53px;
+    padding: 17px 18px;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 20px 20px 5px 5px;
+    background: #fff;
+    justify-content: space-around;
+
+    /* Парящий эффект */
+    box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.25);
+}
+.header-item.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+.header-item.desktop {
+    display: none;
+}
+.header-item {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 3px;
+    align-items: center;
+}
+.header-item__icon {
+    display: flex;
+    gap: 3px;
+}
+
+.header-item span {
+    /* width: 45px; */
+    color: var(--Orange-GASU);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.header-item p {
+    display: none;
+}
+.header-icon {
+    width: 19px;
+    height: 19px;
+    object-fit: cover;
+}
+.header-button {
+    display: none;
+}
+@media (min-width: 1025px) {
+    .header {
+        width: 960px;
+        height: 90px;
+        flex-shrink: 0;
+        border-radius: 0px 0px 20px 20px;
+        margin: 0 auto;
+        background: #fff;
+        font-size: 25px;
+
+        /* Парящий эффект */
+        box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.25);
+    }
+    .header-item.main {
+        width: 475px;
+        margin: auto;
+        margin-left: 100px;
+    }
+
+    .header-item span {
+        /* width: 85px; */
+        font-size: 25px;
+    }
+    .header-icon {
+        width: 30px;
+        height: 30px;
+    }
+    .header-item p {
+        display: flex;
+        font-size: 12px;
+        font-weight: 250;
+        text-transform: capitalize;
+    }
+    .header-item.desktop {
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+    }
+    .header-item__icon.desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .header-button {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--Orange-GASU);
+        border-radius: 100%;
+        border: 0;
+    }
+}

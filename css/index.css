@@ -1,0 +1,74 @@
+body {
+    background-color: var(--Orange-GASU);
+    padding: 10px;
+    height: 100vh;
+}
+
+.ui-kit {
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* width: 360px; */
+    gap: 30px;
+    background-color: var(--background);
+}
+
+.mobile-body {
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 360px; */
+    gap: 30px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 25px 40px 25px;
+    margin-top: 10px;
+
+    min-width: 300px;
+    height: calc(100vh - 53px - 50px);
+    flex-shrink: 0;
+    border-radius: 5px 5px 20px 20px;
+    background: var(--background);
+    overflow: hidden;
+    overflow-y: scroll;
+    /* Парящий эффект */
+    box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.25);
+}
+
+.content::-webkit-scrollbar {
+    width: 0;
+}
+
+@media (min-width: 1025px) {
+    body {
+        padding: 0;
+    }
+
+    .content {
+        display: flex;
+        width: 960px;
+        margin: 50px auto 0;
+        padding: 28px 0 21px 0;
+        height: calc(100vh - 140px);
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        flex-shrink: 0;
+
+        border-radius: 20px 20px 0px 0px;
+        background: var(--background);
+
+        /* Парящий эффект */
+        box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.25);
+    }
+}

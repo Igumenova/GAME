@@ -1,0 +1,49 @@
+.menu {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    margin-bottom: 0;
+    display: flex;
+    min-width: 300px;
+    height: 50px;
+    padding: 5px 50px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 5px 5px 20px 20px;
+    background: #fff;
+    justify-content: space-between;
+}
+.menu__button {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background: transparent;
+}
+.menu__button.main {
+    width: 40px;
+    height: 40px;
+    background-color: var(--Orange-GASU);
+    border-radius: 100%;
+    border: 0;
+}
+.menu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc((100% - 240px) / 2);
+
+    width: 240px;
+    /* height: 100%; */
+    border-top: 2px solid var(--Orange-GASU);
+}
+
+@media (min-width: 1025px) {
+    .menu {
+        display: none;
+    }
+}

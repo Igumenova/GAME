@@ -1,0 +1,29 @@
+body,
+button {
+    font-family: "Geologica", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+p {
+    color: var(--ink-dark);
+    text-align: center;
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@media (min-width: 1025px) {
+    body,
+    button {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+}

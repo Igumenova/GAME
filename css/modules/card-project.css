@@ -1,0 +1,72 @@
+.card-project {
+    display: flex;
+    /* width: 260px; */
+    width: 100%;
+    height: 66px;
+    padding: 10px;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 100px 10px 10px 100px;
+    border-right: 2px solid var(--Orange-GASU);
+    border-bottom: 2px solid var(--Orange-GASU);
+    background: #fff;
+
+    /* Парящий эффект */
+    box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card-project__info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.card-project__name {
+    font-size: 12px;
+    font-weight: 600;
+    align-self: flex-start;
+}
+
+.card-project__readiness {
+    font-size: 10px;
+    width: 101px;
+    align-self: flex-end;
+    margin-top: auto;
+    text-align: right;
+}
+.img-project {
+    width: 46px;
+    height: 46px;
+}
+
+@media (min-width: 1025px) {
+    .card-project {
+        width: 740px;
+        height: 140px;
+        border-radius: 200px 10px 10px 200px;
+        border-right: 5px solid var(--Orange-GASU);
+        border-bottom: 5px solid var(--Orange-GASU);
+        padding: 20px;
+    }
+    .img-project {
+        width: 100px;
+        height: 100px;
+    }
+
+    .card-project__name {
+        font-size: 20px;
+    }
+
+    .card-project__readiness {
+        margin-top: 8px;
+        width: 100%;
+        font-size: 16px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .card-project__days {
+        order: -1;
+    }
+}

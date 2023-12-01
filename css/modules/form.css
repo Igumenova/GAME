@@ -1,0 +1,303 @@
+.form-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-width: 280px;
+    min-height: 530px;
+    /* height: 230px; */
+    flex-shrink: 0;
+}
+.form-frame__icon {
+    height: 60px;
+    width: 60px;
+    margin-bottom: -33px;
+    z-index: 1;
+}
+.form__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.arrow-left,
+.arrow-right {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0;
+    background-color: transparent;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+.arrow-left :active,
+.arrow-right :active {
+    opacity: 0.6;
+}
+.arrow-left img,
+.arrow-right img {
+    margin: 0;
+    width: 30px;
+    height: 30px;
+}
+.arrow-right img {
+    transform: rotate(180deg);
+}
+.form {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    padding: 15px 20px 20px;
+    min-height: 500px;
+    border-radius: 30px;
+    background: #fff;
+
+    /* Парящий эффект */
+    box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.25);
+}
+
+.form h3 {
+    position: relative;
+    text-align: center;
+    margin-top: 18px;
+    /* margin-bottom: 5px; */
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form h3::after {
+    border-radius: 5px;
+    content: "";
+    display: block;
+    width: 155px;
+    height: 3px;
+    background-color: var(--Orange-GASU);
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.form__number {
+    color: var(--very-light-grey);
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    letter-spacing: -0.5px;
+}
+
+.form__question {
+    color: var(--ink-dark);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.form__img {
+    min-width: 200px;
+    width: 100%;
+    max-height: 225px;
+    /* max-width: 400px; */
+    height: auto;
+}
+
+.form__radio-section,
+.form__checkbox-section {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.form__radio-item [type="radio"],
+.form__checkbox-item [type="checkbox"] {
+    display: none;
+}
+
+.form__radio-item label,
+.form__checkbox-item label {
+    display: block;
+    padding: 7px 0 0 34px;
+    background: transparent;
+    border: 2px solid #b0bac3;
+    border-radius: 10px;
+    height: 34px;
+    cursor: pointer;
+    white-space: nowrap;
+    position: relative;
+}
+.form__radio-item label:after,
+.form__radio-item label:before {
+    content: "";
+    position: absolute;
+    border-radius: 10px;
+}
+.form__checkbox-item label:after,
+.form__checkbox-item label:before {
+    content: "";
+    position: absolute;
+    border-radius: 5px;
+}
+.form__radio-item label:after,
+.form__checkbox-item label:after {
+    height: 11px;
+    width: 11px;
+    border: 2px solid #b0bac3;
+    left: 11px;
+    top: 8px;
+}
+.form__radio-item label:before,
+.form__checkbox-item label:before {
+    background: var(--Orange-GASU);
+    height: 8px;
+    width: 8px;
+    left: 14px;
+    top: 10.9px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.form__checkbox-item label:before {
+    border-radius: 2px;
+}
+
+.form__radio-item [type="radio"]:checked ~ label,
+.form__checkbox-item [type="checkbox"]:checked ~ label {
+    background: rgba(235, 107, 68, 0.05);
+    border-color: var(--Orange-GASU);
+}
+
+.form__radio-item [type="radio"]:checked ~ label::after,
+.form__checkbox-item [type="checkbox"]:checked ~ label::after {
+    border-color: var(--Orange-GASU);
+}
+
+.form__radio-item [type="radio"]:checked ~ label:before,
+.form__checkbox-item [type="checkbox"]:checked ~ label:before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.form__input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.form__input-section input {
+    height: 41px;
+    border-radius: 10px;
+    border: 2px solid #b0bac3;
+    padding: 10px;
+}
+.form__input-section input:focus {
+    border-color: var(--Orange-GASU);
+}
+@media (min-width: 1025px) {
+    .form-frame {
+        width: 800px;
+        /* height: 850px; */
+    }
+    .form-frame__icon {
+        height: 100px;
+        width: 100px;
+        margin-bottom: -50px;
+    }
+    .arrow-left,
+    .arrow-right {
+        width: 50px;
+        height: 50px;
+    }
+    .arrow-left img,
+    .arrow-right img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .form h3 {
+        font-size: 26px;
+        margin-top: 30px;
+    }
+
+    .form h3::after {
+        height: 5px;
+        width: 200px;
+        border-radius: 5px;
+        bottom: -15px;
+    }
+    form {
+        margin: 0;
+    }
+    .form {
+        gap: 30px;
+        min-height: 600px;
+    }
+    .form__number {
+        font-size: 26px;
+    }
+
+    .form__question {
+        font-size: 20px;
+    }
+
+    .form__img {
+        min-width: 200px;
+        width: 100%;
+        max-height: 300px;
+        /* max-width: 400px; */
+        height: auto;
+    }
+
+    .form__radio-section,
+    .form__checkbox-section {
+        font-size: 20px;
+        gap: 15px;
+    }
+    .form__radio-item label,
+    .form__checkbox-item label {
+        padding: 10px 0 0 50px;
+        height: 50px;
+    }
+    .form__radio-item label:after,
+    .form__checkbox-item label:after {
+        height: 15px;
+        width: 15px;
+        left: 16px;
+        top: 14px;
+    }
+    .form__radio-item label:before,
+    .form__checkbox-item label:before {
+        height: 12px;
+        width: 12px;
+        left: 19px;
+        top: 17px;
+    }
+
+    .form__input-section input {
+        font-size: 20px;
+        height: 50px;
+        width: 560px;
+    }
+}

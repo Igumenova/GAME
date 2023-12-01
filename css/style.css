@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;900&family=Geologica:wght@100;200;250;300;400;500;600&family=Rubik&display=swap");
+@import "./base/colors.css";
+@import "./modules/button.css";
+@import "./modules/card.css";
+@import "./modules/card-project.css";
+@import "./modules/menu.css";
+@import "./modules/header.css";
+@import "./modules/notification.css";
+@import "./modules/form.css";
+@import "./modules/frame-new-project.css";
+@import "./modules/frame-endgame.css";
+@import "./base/typography.css";
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}

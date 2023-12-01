@@ -1,0 +1,60 @@
+.button {
+    width: 240px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: var(--Orange-GASU);
+    color: #fff;
+    text-align: center;
+    border: none;
+    opacity: 1;
+    transition: opacity 0.2s;
+    font-size: 14px;
+}
+.button.answer {
+    width: 210px;
+    height: 34px;
+    border-radius: 60px;
+}
+.red {
+    background: var(--red);
+}
+.green {
+    background: var(--green);
+}
+.grey {
+    background: var(--light-grey);
+}
+.sm {
+    width: 120px;
+}
+.button:active {
+    opacity: 0.9;
+}
+
+@media (min-width: 1025px) {
+    .button {
+        width: 310px;
+        height: 60px;
+        font-size: 26px;
+        font-weight: 400;
+    }
+    .button.answer {
+        width: 445px;
+        height: 60px;
+        font-size: 26px;
+    }
+
+    .sm {
+        width: 150px;
+        height: 43px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .long {
+        width: 344px;
+        font-size: 14px;
+        font-weight: 400;
+        height: 40px;
+    }
+}
